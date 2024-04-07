@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Channel Information</h1>
+    <p>Title: {{ channel_info.channel_title }}</p>
+    <p>Video Count: {{ channel_info.video_count }}</p>
+    <!-- Add more channel information as needed -->
+
+    <h1>Video Statistics</h1>
+    <p>Views: {{ stats.viewCount }}</p>
+    <p>Likes: {{ stats.likeCount }}</p>
+    <!-- Add more video statistics as needed -->
+
+    <h1>Sentiment Analysis Results</h1>
+    <p>Positive Comments: {{ results.num_positive }}</p>
+    <p>Negative Comments: {{ results.num_negative }}</p>
+    <p>Neutral Comments: {{ results.num_neutral }}</p>
+    <!-- Add more sentiment analysis results as needed -->
+
+    <h1>YouTube Video</h1>
+    <!-- Embed YouTube video using the youtube_link variable -->
+    <iframe width="560" height="315" src="{{ youtube_link }}" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
